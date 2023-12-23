@@ -1,13 +1,12 @@
 {
-  "name": "@antfu/eslint-config",
+  "name": "@ysansan/eslint-config",
   "type": "module",
-  "version": "2.4.6",
+  "version": "0.0.1",
   "packageManager": "pnpm@8.12.1",
-  "description": "Anthony's ESLint config",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com> (https://github.com/antfu/)",
+  "description": "fork from Anthony's ESLint config",
+  "author": "ysansan",
   "license": "MIT",
-  "funding": "https://github.com/sponsors/antfu",
-  "homepage": "https://github.com/antfu/eslint-config",
+  "homepage": "https://github.com/whitexie/eslint-config",
   "keywords": [
     "eslint-config"
   ],
@@ -87,7 +86,6 @@
     "eslint-plugin-vitest": "^0.3.17",
     "eslint-plugin-vue": "^9.19.2",
     "eslint-plugin-yml": "^1.11.0",
-    "eslint-processor-vue-blocks": "^0.1.1",
     "globals": "^13.24.0",
     "jsonc-eslint-parser": "^2.4.0",
     "local-pkg": "^0.5.0",
@@ -100,7 +98,6 @@
     "yargs": "^17.7.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "workspace:*",
     "@antfu/eslint-plugin-prettier": "^5.0.1-1",
     "@antfu/ni": "^0.21.12",
     "@stylistic/eslint-plugin-migrate": "^1.5.1",
@@ -110,6 +107,7 @@
     "@types/prompts": "^2.4.9",
     "@types/yargs": "^17.0.32",
     "@unocss/eslint-plugin": "^0.58.0",
+    "@ysansan/eslint-config": "workspace:*",
     "bumpp": "^9.2.1",
     "eslint": "npm:eslint-ts-patch@^8.55.0-1",
     "eslint-flat-config-viewer": "^0.1.3",
@@ -135,5 +133,8 @@
   },
   "lint-staged": {
     "*": "eslint --fix"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }

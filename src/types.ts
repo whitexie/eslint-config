@@ -1,6 +1,5 @@
 import type { FlatGitignoreOptions } from 'eslint-config-flat-gitignore'
 import type { ParserOptions } from '@typescript-eslint/parser'
-import type { Options as VueBlocksOptions } from 'eslint-processor-vue-blocks'
 import type { Linter } from 'eslint'
 import type {
   EslintCommentsRules,
@@ -81,14 +80,6 @@ export interface OptionsFiles {
 }
 
 export interface OptionsVue {
-  /**
-   * Create virtual files for Vue SFC blocks to enable linting.
-   *
-   * @see https://github.com/antfu/eslint-processor-vue-blocks
-   * @default true
-   */
-  sfcBlocks?: boolean | VueBlocksOptions
-
   /**
    * Vue version. Apply different rules set from `eslint-plugin-vue`.
    *
